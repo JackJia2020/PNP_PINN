@@ -13,7 +13,7 @@ The project is divided into three main components:
 ## Repository Structure
 
 ```text
-PNP-Neural-Network-Benchmark/
+PNP_PINN/
 │
 ├── README.md                           # Project documentation
 ├── PNP_Results_Summary.ipynb           # Master Jupyter Notebook with analysis and visualizations
@@ -26,7 +26,8 @@ PNP-Neural-Network-Benchmark/
 │   │   └── config.yaml                 # Hydra configuration file for model hyperparameters
 │   ├── FDM_solver.py                   # Explicit numerical solver to generate ground truth
 │   ├── pnp.py                          # Physics-Informed Neural Network (PINN) training script
-│   └── PNP_supervised.py               # Data-driven Supervised NN training script
+│   ├── PNP_supervised.py               # Data-driven Supervised NN training script
+│   └── utils.py                        # Utility functions for visualization, metrics, and loss tracking
 │
 └── outputs/                            # Model inference outputs (NPZ arrays)
     ├── PNP/                            # PINN predictions
